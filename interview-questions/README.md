@@ -1,6 +1,6 @@
 # Test
 
-#### In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
+### In what order will the numbers 1-4 be logged to the console when the code below is executed? Why?
 ```
 (function() {
     console.log(1); 
