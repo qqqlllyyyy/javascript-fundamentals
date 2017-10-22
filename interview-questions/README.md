@@ -1,7 +1,7 @@
 # Test
 
 ### In what order will the numbers be logged to the console when the code below is executed?
-```
+```javascript
 (function() {
     console.log(1); 
     setTimeout(function(){console.log(2)}, 1000); 
@@ -19,7 +19,7 @@ Similarly, `setTimeout()` also puts execution of its referenced function into th
 
 When a value of zero is passed as the second argument to setTimeout(), it attempts to execute the specified function “as soon as possible”. Specifically, execution of the function is placed on the event queue to occur on the next timer tick. Note, though, that this is not immediate; the function is not executed until the next tick. That’s why in the above example, the call to console.log(4) occurs before the call to console.log(3) (since the call to console.log(3) is invoked via setTimeout, so it is slightly delayed).
 
-#### Write a simple function (less than 160 characters) that returns a boolean indicating whether or not a string is a palindrome.
+### Write a simple function (less than 160 characters) that returns a boolean indicating whether or not a string is a palindrome.
 
 The following one line function will return true if str is a palindrome; otherwise, it returns false.
 
@@ -30,7 +30,7 @@ function isPalindrome(str) {
 }
 ```
 
-#### Write a sum method which will work properly when invoked using either syntax below.
+### Write a sum method which will work properly when invoked using either syntax below.
 ```
 console.log(sum(2,3));   // Outputs 5
 console.log(sum(2)(3));  // Outputs 5
@@ -60,9 +60,9 @@ function sum(x, y) {
 ```
 When a function is invoked, JavaScript does not require the number of arguments to match the number of arguments in the function definition. If the number of arguments passed exceeds the number of arguments in the function definition, the excess arguments will simply be ignored. On the other hand, if the number of arguments passed is less than the number of arguments in the function definition, the missing arguments will have a value of undefined when referenced within the function. So, in the above example, by simply checking if the 2nd argument is undefined, we can determine which way the function was invoked and proceed accordingly.
 
-#### Consider the following code snippet:
-#### (a) What gets logged to the console when the user clicks on “Button 4” and why?
-#### (b) Provide one or more alternate implementations that will work as expected.
+### Consider the following code snippet:
+### (a) What gets logged to the console when the user clicks on “Button 4” and why?
+### (b) Provide one or more alternate implementations that will work as expected.
 ```javascript
 for (var i = 0; i < 5; i++) {
   var btn = document.createElement('button');
@@ -116,7 +116,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-#### Assuming d is an “empty” object in scope, `var d = {}`. What is accomplished using the following code?
+### Assuming d is an “empty” object in scope, `var d = {}`. What is accomplished using the following code?
 
 ```javascript
 [ 'zebra', 'horse' ].forEach(function(k) {
